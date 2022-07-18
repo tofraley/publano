@@ -1,0 +1,11 @@
+find "ConsumerUserChange*" in Compass.Queues as Queues
+every 5 seconds
+
+show table Queues
+with 
+    Name as Queue,
+    Ready,
+    Unacked,
+    Total
+
+show "Press ENTER to stop"
